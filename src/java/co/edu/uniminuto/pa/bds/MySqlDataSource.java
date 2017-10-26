@@ -25,7 +25,7 @@ public class MySqlDataSource {
         ds.setPortNumber(3306);
         ds.setDatabaseName("prueba1");
         ds.setUser("root");
-        ds.setPassword("root");        
+        ds.setPassword("123456789");        
     }
     
     public static Connection getConexionBD()

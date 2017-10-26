@@ -3,40 +3,29 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.edu.uniminuto.pa.DTOs;
+package CS_DTO;
 
 /**
  *
- * @author nixoduaa
+ * @author camila
  */
-public class Persona {
-
-            int id = 0;
-            String identificacion = null;
+public class Solicitud_DTO {
+            int idSolicitud = 0;
             String nombre1 = null;
             String nombre2 = null;
             String apellido1 = null;
             String apellido2 = null;
-            String genero = null;
-            String tipoP = null;
-            String fNacimiento = null;
+            String identificacion = null;
+            String Direccion = null;
+            String email = null;
             String telef = null;
-            String email = null;    
-            
-    public int getId() {
-        return id;
+
+    public int getIdSolicitud() {
+        return idSolicitud;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getIdentificacion() {
-        return identificacion;
-    }
-
-    public void setIdentificacion(String identificacion) {
-        this.identificacion = identificacion;
+    public void setIdSolicitud(int idSolicitud) {
+        this.idSolicitud = idSolicitud;
     }
 
     public String getNombre1() {
@@ -71,28 +60,28 @@ public class Persona {
         this.apellido2 = apellido2;
     }
 
-    public String getGenero() {
-        return genero;
+    public String getIdentificacion() {
+        return identificacion;
     }
 
-    public void setGenero(String genero) {
-        this.genero = genero;
+    public void setIdentificacion(String identificacion) {
+        this.identificacion = identificacion;
     }
 
-    public String getTipoP() {
-        return tipoP;
+    public String getDireccion() {
+        return Direccion;
     }
 
-    public void setTipoP(String tipoP) {
-        this.tipoP = tipoP;
+    public void setDireccion(String Direccion) {
+        this.Direccion = Direccion;
     }
 
-    public String getfNacimiento() {
-        return fNacimiento;
+    public String getEmail() {
+        return email;
     }
 
-    public void setfNacimiento(String fNacimiento) {
-        this.fNacimiento = fNacimiento;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getTelef() {
@@ -102,12 +91,6 @@ public class Persona {
     public void setTelef(String telef) {
         this.telef = telef;
     }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }            
+          
+    
 }

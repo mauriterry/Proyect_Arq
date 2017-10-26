@@ -3,9 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.edu.uniminuto.pa.DAOs;
+package CS_DAO;
 
-import co.edu.uniminuto.pa.DTOs.Persona;
+/**
+ *
+ * @author  Jean Carlo Arévalo & Camila castillo U
+ */
+
+import CS_DTO.ClienteDTO;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -14,22 +19,15 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-/**
- *
- * @author nixoduaa
- */
-public class PersonaDAO {
+public class ClienteDAO {
     
-    
-    
-    public boolean crearPersona(Persona p, Connection con)
+    public boolean crearCliente(ClienteDTO p, Connection con)
     {
         PreparedStatement pstmt = null;
         boolean respuesta = false;
         try {            
             
-            Logger.getLogger(PersonaDAO.class.getName()).log(Level.INFO, "Ejecutando crearPersona...");
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.INFO, "Ejecutando crearPersona...");
             
             pstmt = con.prepareStatement("INSERT INTO persona "
                     + " VALUES (?,?,?,?,?,?,?,?,?,?,?)");
@@ -52,19 +50,19 @@ public class PersonaDAO {
             
             respuesta = true;
         } catch (SQLException ex) {
-            Logger.getLogger(PersonaDAO.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         return respuesta;
 
     }
 
-    public ArrayList<Persona> consultarPersona(Persona p, Connection con)
+    public ArrayList<ClienteDTO> consultarCliente(ClienteDTO p, Connection con)
     {
         
-        ArrayList<Persona> datos = new ArrayList();
+        ArrayList<ClienteDTO> datos = new ArrayList();
         
-        Logger.getLogger(PersonaDAO.class.getName()).log(Level.INFO, "Ejecutando consultarPersona...");
+        Logger.getLogger(ClienteDAO.class.getName()).log(Level.INFO, "Ejecutando consultarPersona...");
         
         try {
             Statement s = con.createStatement();
@@ -78,7 +76,7 @@ public class PersonaDAO {
             
             while (rs.next())
             { 
-                Persona per = new Persona();
+                ClienteDTO per = new ClienteDTO();
                 per.setIdentificacion(rs.getString(1));
                 per.setNombre1(rs.getString(2));
                 per.setNombre2(rs.getString(3));
@@ -95,11 +93,11 @@ public class PersonaDAO {
                 
             }
             
-            Logger.getLogger(PersonaDAO.class.getName()).log(Level.INFO, "Ejecutando consultarPersona fin..." + datos.size());
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.INFO, "Ejecutando consultarPersona fin..." + datos.size());
             
             con.close();
         } catch (SQLException ex) {
-            Logger.getLogger(PersonaDAO.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         return datos;
@@ -120,19 +118,19 @@ public class PersonaDAO {
 
             con.close();
         } catch (SQLException ex) {
-            Logger.getLogger(PersonaDAO.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         return id;
     }
          
-    public boolean editarPersona(Persona p, Connection con)
+    public boolean editarCliente(ClienteDTO p, Connection con)
     {
         PreparedStatement pstmt = null;
         boolean respuesta = false;
         try {            
             
-            Logger.getLogger(PersonaDAO.class.getName()).log(Level.INFO, "Ejecutando editarPersona...");
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.INFO, "Ejecutando editarPersona...");
             
             pstmt = con.prepareStatement("UPDATE persona "
                     + " SET "
@@ -152,7 +150,7 @@ public class PersonaDAO {
             
             respuesta = true;
         } catch (SQLException ex) {
-            Logger.getLogger(PersonaDAO.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         return respuesta;

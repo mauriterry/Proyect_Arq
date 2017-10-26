@@ -5,15 +5,10 @@
  */
 package controllers;
 
-/**
- *
- * @author NixonD
- */
 
-import co.edu.uniminuto.pa.DAOs.PersonaDAO;
-import co.edu.uniminuto.pa.DTOs.Persona;
+import CS_DAO.Solicitud_DAO;
+import CS_DTO.Solicitud_DTO;
 import co.edu.uniminuto.pa.bds.MySqlDataSource;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -23,34 +18,30 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.support.SessionStatus;
- 
+
+/**
+ *
+ * @author camila
+ */
 @Controller
 @RequestMapping("/")
-public class PersonaControllers {
- /*
-    @RequestMapping(method = RequestMethod.GET)
-    public String helloWorld(ModelMap modelMap) {
-        System.out.println("personaCrear");
-        modelMap.put("mensajePersona", "Pase por el controller de Persona");
-        return "persona_crear";
-    }
-    */
-@RequestMapping(method = RequestMethod.GET, value = "personaCrear.htm")
+public class SolicitudController {
+     @RequestMapping(method = RequestMethod.GET, value = "SolicitudCrear.htm")
     public String processSubmit(HttpServletRequest req, SessionStatus status,ModelMap model) 
     {
 
-        System.out.println("personaCrear");
-        model.put("mensajePersona", "Pase por el controller de Persona:::"+req.getParameter("nombre"));
-        return "persona_crear";
+        System.out.println("SolicitudCrear");
+        model.put("mensajeSolicitud", "Pase por el controller de Solicitud:::"+req.getParameter("nombre"));
+        return "Solicitud_crear";
     }    
     
-@RequestMapping(method = RequestMethod.POST, value = "personaRegistrar.htm")
+@RequestMapping(method = RequestMethod.POST, value = "SolicitudRegistrar.htm")
     public String processSubmit1(HttpServletRequest req, SessionStatus status,ModelMap model) 
     {
 
-        PersonaDAO pDao = new PersonaDAO();
+        Solicitud_DAO pDao = new Solicitud_DAO();
             
-        Logger.getLogger(PersonaControllers.class.getName()).log(Level.INFO, "Ejecutando processSubmit1...");
+        Logger.getLogger(ClienteController.class.getName()).log(Level.INFO, "Ejecutando processSubmit1...");
 
         int id = pDao.obtenerId(MySqlDataSource.getConexionBD());
         String ident = req.getParameter("identificacion");
@@ -58,64 +49,61 @@ public class PersonaControllers {
         String nombre2 = req.getParameter("nombre2");
         String apellido1 = req.getParameter("apellido1");
         String apellido2 = req.getParameter("apellido2");
-        String genero = req.getParameter("genero");
-        String tipoP = req.getParameter("tipop");
-        String fNacimiento = req.getParameter("fecha");
+        String direccion = req.getParameter("direccion");
         String telef = req.getParameter("telefono");
         String email = req.getParameter("email");
         
-        Persona p = new Persona();
-        p.setId(id);
-        p.setIdentificacion(ident);
+        Solicitud_DTO p = new Solicitud_DTO();
+        p.setIdSolicitud(id);
         p.setNombre1(nombre1);
         p.setNombre2(nombre2);
         p.setApellido1(apellido1);
         p.setApellido2(apellido2);
-        p.setGenero(genero);
-        p.setTipoP(tipoP);
-        p.setfNacimiento(fNacimiento);
+        p.setDireccion(direccion);
+        p.setIdentificacion(ident);
         p.setTelef(telef);
         p.setEmail(email);                                    
             
-        boolean insert = pDao.crearPersona(p, MySqlDataSource.getConexionBD());
+        boolean insert = pDao.crearSolicitud(p, MySqlDataSource.getConexionBD());
 
-        Logger.getLogger(PersonaControllers.class.getName()).log(Level.SEVERE, null, "Registrar + " + ident + "-" + insert);
+        Logger.getLogger(SolicitudController.class.getName()).log(Level.SEVERE, null, "Registrar + " + ident + "-" + insert);
         
         if (insert)
             model.put("mensaje", "El registro fue creado satisfactoriamente!!!");
         else
             model.put("mensaje", "El registro NO fue creado, consulte con el administrador...");
         
-        return "persona_crear";
+        return "Solicitud_crear";
     }     
     
-@RequestMapping(method = RequestMethod.GET, value = "personaConsultar.htm")
+@RequestMapping(method = RequestMethod.GET, value = "SolicitudConsultar.htm")
     public String processSubmit2(HttpServletRequest req, SessionStatus status,ModelMap model) 
     {      
-        Logger.getLogger(PersonaControllers.class.getName()).log(Level.INFO, "Ejecutando processSubmit2...");
-        return "persona_consultar";
+        Logger.getLogger(ClienteController.class.getName()).log(Level.INFO, "Ejecutando processSubmit2...");
+        return "Solicitud_consultar";
     } 
     
-@RequestMapping(method = RequestMethod.POST, value = "personaConsultarForm.htm")
+@RequestMapping(method = RequestMethod.POST, value = "SolicitudConsultarForm.htm")
     public String processSubmit3(HttpServletRequest req, SessionStatus status,ModelMap model) 
     {
 
-        PersonaDAO pDao = new PersonaDAO();
+        Solicitud_DAO pDao = new Solicitud_DAO();
+        
             
-        Logger.getLogger(PersonaDAO.class.getName()).log(Level.INFO, "Ejecutando processSubmit3...");
+        Logger.getLogger(Solicitud_DAO.class.getName()).log(Level.INFO, "Ejecutando processSubmit3...");
 
         int id = pDao.obtenerId(MySqlDataSource.getConexionBD());
         String ident = req.getParameter("identificacion");
         String nombre1 = req.getParameter("nombre1");
         
-        Persona p = new Persona();
-        p.setId(id);
+       Solicitud_DTO p = new Solicitud_DTO();
+        p.setIdSolicitud(id);
         p.setIdentificacion(ident);
         p.setNombre1(nombre1);
             
-        List<Persona> datos = pDao.consultarPersona(p, MySqlDataSource.getConexionBD());
+        List<Solicitud_DTO> datos = pDao.consultarSolicitud(p, MySqlDataSource.getConexionBD());
 
-        Logger.getLogger(PersonaControllers.class.getName()).log(Level.SEVERE, null, "Consultar + " + ident + "-" + datos.size());
+        Logger.getLogger(SolicitudController.class.getName()).log(Level.SEVERE, null, "Consultar + " + ident + "-" + datos.size());
         
         model.put("listaPersonas", datos);
         if (datos.size() > 0)
@@ -123,87 +111,86 @@ public class PersonaControllers {
         else
             model.put("mensaje", "La consulta NO tiene resultados...");
         
-        return "persona_consultar";
+        return "Solicitud_consultar";
     }     
     
-@RequestMapping(method = RequestMethod.GET, value = "personaEditar.htm")
+@RequestMapping(method = RequestMethod.GET, value = "SolicitudEditar.htm")
     public String processSubmit4(HttpServletRequest req, SessionStatus status,ModelMap model) 
     {      
-        Logger.getLogger(PersonaControllers.class.getName()).log(Level.INFO, "Ejecutando processSubmit4...");
-        return "persona_editar";
+        Logger.getLogger(SolicitudController.class.getName()).log(Level.INFO, "Ejecutando processSubmit4...");
+        return "Solicitud_editar";
     } 
     
-@RequestMapping(method = RequestMethod.POST, value = "personaEditarForm1.htm")
+@RequestMapping(method = RequestMethod.POST, value = "SolicitudEditarForm1.htm")
     public String processSubmit5(HttpServletRequest req, SessionStatus status,ModelMap model) 
     {
 
-        PersonaDAO pDao = new PersonaDAO();
-            
-        Logger.getLogger(PersonaDAO.class.getName()).log(Level.INFO, "Ejecutando processSubmit5...");
+       Solicitud_DAO pDao = new Solicitud_DAO();
+        
+        Logger.getLogger(Solicitud_DAO.class.getName()).log(Level.INFO, "Ejecutando processSubmit5...");
 
         int id = pDao.obtenerId(MySqlDataSource.getConexionBD());
         String ident = req.getParameter("identificacion");
         String nombre1 = req.getParameter("nombre1");
         
-        Persona p = new Persona();
-        p.setId(id);
+      Solicitud_DTO p = new Solicitud_DTO(); 
+        p.setIdSolicitud(id);
         p.setIdentificacion(ident);
         p.setNombre1(nombre1);
             
-        List<Persona> datos = pDao.consultarPersona(p, MySqlDataSource.getConexionBD());
+        List<Solicitud_DTO> datos = pDao.consultarSolicitud(p, MySqlDataSource.getConexionBD());
 
-        Logger.getLogger(PersonaControllers.class.getName()).log(Level.SEVERE, null, "Consultar + " + ident + "-" + datos.size());
+        Logger.getLogger(SolicitudController.class.getName()).log(Level.SEVERE, null, "Consultar + " + ident + "-" + datos.size());
         
-        model.put("listaPersonas", datos);
+        model.put("listaSolicitudes", datos);
         
         
-        return "persona_editar";
+        return "Solicitud_editar";
         
     }    
     
-@RequestMapping(method = RequestMethod.POST, value = "personaEditarForm2.htm")
+@RequestMapping(method = RequestMethod.POST, value = "SolicitudEditarForm2.htm")
     public String processSubmit6(HttpServletRequest req, SessionStatus status,ModelMap model) 
     {
 
-        PersonaDAO pDao = new PersonaDAO();
+       Solicitud_DAO pDao = new Solicitud_DAO();
+        
             
-        Logger.getLogger(PersonaDAO.class.getName()).log(Level.INFO, "Ejecutando processSubmit6...");
+        Logger.getLogger(Solicitud_DAO.class.getName()).log(Level.INFO, "Ejecutando processSubmit6...");
 
-        int id = Integer.parseInt(req.getParameter("id"));
+        int id = Integer.parseInt(req.getParameter("id"));  
         String ident = req.getParameter("identificacion");
         String nombre1 = req.getParameter("nombre1");
         String nombre2 = req.getParameter("nombre2");
         String apellido1 = req.getParameter("apellido1");
         String apellido2 = req.getParameter("apellido2");
-        String genero = req.getParameter("genero");
-        String tipoP = req.getParameter("tipop");
-        String fNacimiento = req.getParameter("fecha");
+        String direccion = req.getParameter("direccion");
         String telef = req.getParameter("telefono");
         String email = req.getParameter("email");
         
-        Logger.getLogger(PersonaDAO.class.getName()).log(Level.INFO, "Id persona: " + id);
         
-        Persona p = new Persona();
-        p.setId(id);
-        p.setIdentificacion(ident);
+        
+        Logger.getLogger(Solicitud_DAO.class.getName()).log(Level.INFO, "Id Solicitud: " + id);
+        
+       Solicitud_DTO p = new Solicitud_DTO();
+       p.setIdSolicitud(id);
         p.setNombre1(nombre1);
         p.setNombre2(nombre2);
         p.setApellido1(apellido1);
         p.setApellido2(apellido2);
-        p.setGenero(genero);
-        p.setTipoP(tipoP);
-        p.setfNacimiento(fNacimiento);
+        p.setDireccion(direccion);
+        p.setIdentificacion(ident);
         p.setTelef(telef);
-        p.setEmail(email);
+        p.setEmail(email);    
             
-        boolean res = pDao.editarPersona(p, MySqlDataSource.getConexionBD());                         
+        boolean res = pDao.editarSolicitud(p, MySqlDataSource.getConexionBD());                         
         
         if (res)
             model.put("mensaje", "Se edito satisfactoriamente!!!");
         else
             model.put("mensaje", "NO se guardaron los cambios...");
         
-        return "persona_editar";
+        return "Solicitud_editar";
         
-    }    
+    }      
 }

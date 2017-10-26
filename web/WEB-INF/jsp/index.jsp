@@ -50,21 +50,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="w3layouts-address">
 				<ul>
 					<li><i class="fa fa-mobile" aria-hidden="true"></i> +11 222 333 4444</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com"> mail@example.com</a></li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com"> CentaurosBank@CBank.com</a></li>
 				</ul>
-			</div>
-			<div class="agileinfo-social-grids">
-				<ul>
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-rss"></i></a></li>
-					<li><a href="#"><i class="fa fa-vk"></i></a></li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!-- //header-top -->
+                        </div>
+                        <div class="agileinfo-social-grids">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"> </div>
+                </div>
+        </div>
+        <!-- //header-top -->
 	<!-- header -->
 	<div class="header">
 			<div class="container">
@@ -78,26 +76,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 					  </button>
 						<div class="w3layouts-logo">
-							<h1><a href="index.html">Hosting <span>City</span></a></h1>
+                                                           <img src="./images/logo.png"border="0" width="80%" height="80%"></img>
+                                                           <table>
+                                                               <tr width="10%">
+                                                               <td> </td>
+                                                               </tr>
+                                                           </table>
 						</div>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1"style="color: #076F78;">
 						<nav>
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="about.html" class="hvr-sweep-to-bottom">About</a></li>
-								<li><a href="plans.html" class="hvr-sweep-to-bottom">Plans</a></li>
-								<li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Persona<span class="caret"></span></a>
+								<li><a href="about.html" class="hvr-sweep-to-bottom">Productos</a></li>
+								<li><a href="plans.html" class="hvr-sweep-to-bottom">Tarjetas</a></li>
+                                                                <li><a href="plans.html" class="hvr-sweep-to-bottom">Solicitudes</a></li>
+								<li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clientes<span class="caret"></span></a>
 									<ul class="dropdown-menu">
-										<li><a class="hvr-sweep-to-bottom" href="personaCrear.htm">Crear</a></li>
-										<li><a class="hvr-sweep-to-bottom" href="personaConsultar.htm">Consultar</a></li>
-										<li><a class="hvr-sweep-to-bottom" href="personaEditar.htm">Editar</a></li>
+										<li><a class="hvr-sweep-to-bottom" href="personaCrear.htm">Crear Cliente</a></li>
+										<li><a class="hvr-sweep-to-bottom" href="personaConsultar.htm">Consultar Cliente</a></li>
+										<li><a class="hvr-sweep-to-bottom" href="personaEditar.htm">Editar Cliente</a></li>
 									</ul>
 								</li>
-								<li><a href="blog.html" class="hvr-sweep-to-bottom">Blog</a></li>
-								<li><a href="mail.html" class="hvr-sweep-to-bottom">Mail Us</a></li>
+								<li><a href="blog.html" class="hvr-sweep-to-bottom">Acerca de</a></li>
+								
 							</ul>
 						</nav>
 					</div>
@@ -154,462 +158,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 
 	</script>
-	<!-- //banner -->
-	<div class="domain">
-		<div class="container">
-			<form class="search-form domain-search" action="#" method="post">
-				<div class="two-fifth column first">
-					<h2>search your <span>domain</span></h2>
-				</div>
-				<div class="three-fifth column first">
-					<input type="text" class="text" name="Name" placeholder="Enter your domain name" required="">               
-				</div>
-				<div class="one-fifth column">
-					<span class="selection-box">
-						<select class="domains valid" name="domains">
-							<option>Year (0-1 Year)</option>
-							<option>Year (0-2 Year)</option>
-							<option>Year (0-4 Year)</option>
-							<option>Year (0-8 Year)</option>
-						</select>
-					</span>
-				</div>
-				<div class="one-fifth column">
-					<span class="selection-box">
-						<select class="domains valid" name="domains">
-							<option>.com</option>
-							<option>.info</option>
-							<option>.net</option>
-							<option>.org</option>
-						</select>
-					</span>
-				</div>
-				<div class="one-fifth column">
-					<input type="submit" value="Search">
-				</div>
-				<div class="clearfix"> </div>
-			</form>
-		</div>
-	</div>
-	<!-- banner-bottom -->
-	<div class="banner-bottom">
-		<div class="container">
-			<div class="w3-banner-bottom-heading">
-				<h3>What <span>We Do?</span></h3>
-			</div>
-			<div class="agileits-banner-bottom">
-				<div class="col-md-3 agileits-banner-bottom-grid">
-					<div class="services-grid1">
-						<div class="services-grid-right agile-services-grid-right">
-							<div class="services-grid-right-grid hvr-radial-out blue-grid">
-								<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
-							</div>
-						</div>
-						<div class="services-grid-left agile-services-grid-left">
-							<h4>repreh qui in ea voluptate</h4>
-							<p>Itaque earum rerum hic tenetur a sapiente 
-							delectus, ut aut reiciendis voluptatibus maiores alias</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 agileits-banner-bottom-grid">
-					<div class="services-grid1">
-						<div class="services-grid-right agile-services-grid-right">
-							<div class="services-grid-right-grid hvr-radial-out orange-grid">
-								<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-							</div>
-						</div>
-						<div class="services-grid-left agile-services-grid-left">
-							<h4>repreh qui in ea voluptate</h4>
-							<p>Itaque earum rerum hic tenetur a sapiente 
-							delectus, ut aut reiciendis voluptatibus maiores alias</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 agileits-banner-bottom-grid">
-					<div class="services-grid1">
-						<div class="services-grid-right agile-services-grid-right">
-							<div class="services-grid-right-grid hvr-radial-out green-grid">
-								<span class="glyphicon glyphicon-magnet" aria-hidden="true"></span>
-							</div>
-						</div>
-						<div class="services-grid-left agile-services-grid-left">
-							<h4>repreh qui in ea voluptate</h4>
-							<p>Itaque earum rerum hic tenetur a sapiente 
-							delectus, ut aut reiciendis voluptatibus maiores alias</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 agileits-banner-bottom-grid">
-					<div class="services-grid1">
-						<div class="services-grid-right agile-services-grid-right">
-							<div class="services-grid-right-grid hvr-radial-out red-grid">
-								<span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-							</div>
-						</div>
-						<div class="services-grid-left agile-services-grid-left">
-							<h4>repreh qui in ea voluptate</h4>
-							<p>Itaque earum rerum hic tenetur a sapiente 
-							delectus, ut aut reiciendis voluptatibus maiores alias</p>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //banner-bottom -->
-	<!-- special -->
-	<div class="special">
-		<div class="container">
-			<div class="w3-banner-bottom-heading">
-				<h3>Special Introductory <span>Offers</span></h3>
-			</div>
-			<div class="wthree-special-grid">
-				<div class="flipster">
-				  <ul>
-					<li>
-						<div class="pricing">
-							<div class="pricing-top green-top">
-								<h3>Business</h3>
-								<p>$50/month</p>
-							</div>
-							<div class="pricing-bottom">
-								<div class="pricing-bottom-top">
-									<p>1 Website</p>
-									<p>1 Year Updates</p>
-									<p>1 Year Email Support</p>
-								</div>
-								<div class="pricing-bottom-bottom">
-									<p><span>Unlimited</span> Email Addresses</p>
-									<p><span>65GB </span> of Storage</p>
-									<p><span>75</span> Databases</p>  
-									<p><span>25</span> Domains</p>
-									<p class="text"><span>24/7</span> Unlimited Support</p>
-								</div>
-								<div class="buy-button">
-									<a href="plans.html">Read More</a>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="pricing">
-							<div class="pricing-top blue-top">
-								<h3>Corporate</h3>
-								<p>$70/month</p>
-							</div>
-							<div class="pricing-bottom">
-								<div class="pricing-bottom-top">
-									<p>1 Website</p>
-									<p>1 Year Updates</p>
-									<p>1 Year Email Support</p>
-								</div>
-								<div class="pricing-bottom-bottom">
-									<p><span>Unlimited</span> Email Addresses</p>
-									<p><span>85GB </span> of Storage</p>
-									<p><span>65</span> Databases</p>  
-									<p><span>30</span> Domains</p>
-									<p class="text"><span>24/7</span> Unlimited Support</p>
-								</div>
-								<div class="buy-button">
-									<a href="plans.html">Read More</a>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="pricing">
-							<div class="pricing-top">
-								<h3>Personal</h3>
-								<p>$35/month</p>
-							</div>
-							<div class="pricing-bottom">
-								<div class="pricing-bottom-top">
-									<p>1 Website</p>
-									<p>1 Year Updates</p>
-									<p>1 Year Email Support</p>
-								</div>
-								<div class="pricing-bottom-bottom">
-									<p><span>Unlimited</span> Email Addresses</p>
-									<p><span>50GB </span> of Storage</p>
-									<p><span>55</span> Databases</p>  
-									<p><span>21</span> Domains</p>
-									<p class="text"><span>24/7</span> Unlimited Support</p>
-								</div>
-								<div class="buy-button">
-									<a href="plans.html">Read More</a>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="pricing">
-							<div class="pricing-top green-top">
-								<h3>Business</h3>
-								<p>$50/month</p>
-							</div>
-							<div class="pricing-bottom">
-								<div class="pricing-bottom-top">
-									<p>1 Website</p>
-									<p>1 Year Updates</p>
-									<p>1 Year Email Support</p>
-								</div>
-								<div class="pricing-bottom-bottom">
-									<p><span>Unlimited</span> Email Addresses</p>
-									<p><span>65GB </span> of Storage</p>
-									<p><span>75</span> Databases</p>  
-									<p><span>25</span> Domains</p>
-									<p class="text"><span>24/7</span> Unlimited Support</p>
-								</div>
-								<div class="buy-button">
-									<a href="plans.html">Read More</a>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="pricing">
-							<div class="pricing-top">
-								<h3>Personal</h3>
-								<p>$35/month</p>
-							</div>
-							<div class="pricing-bottom">
-								<div class="pricing-bottom-top">
-									<p>1 Website</p>
-									<p>1 Year Updates</p>
-									<p>1 Year Email Support</p>
-								</div>
-								<div class="pricing-bottom-bottom">
-									<p><span>Unlimited</span> Email Addresses</p>
-									<p><span>50GB </span> of Storage</p>
-									<p><span>55</span> Databases</p>  
-									<p><span>21</span> Domains</p>
-									<p class="text"><span>24/7</span> Unlimited Support</p>
-								</div>
-								<div class="buy-button">
-									<a href="plans.html">Read More</a>
-								</div>
-							</div>
-						</div>
-					</li>
-				  </ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //special -->
-	<!-- choose -->
-	<div class="choose jarallax">
-		<div class="w3-agile-testimonial">
-			<div class="container">
-				<div class="w3-agileits-choose">
-					<div class="col-md-6 choose-grid">
-						<div class="w3-banner-bottom-heading choose-heading">
-							<h3>Why Choose<span> Us?</span></h3>
-						</div>
-						<div class="top-choose-info">
-							<div class="choose-info-top">
-								<div class="choose-left-grid col-sm-6">
-									<div class="choose-info-grid ">
-										<ul>
-											<li><i class="fa fa-bell" aria-hidden="true"></i></li>
-											<li>Lorem ipsum</li>
-										</ul>
-									</div>
-								</div>
-								<div class="choose-right-grid col-sm-6">
-									<div class="choose-info-grid ">
-										<ul>
-											<li><i class="fa fa-cog" aria-hidden="true"></i></li>
-											<li>Nulla dictum</li>
-										</ul>
-									</div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="choose-info-top">
-								<div class="choose-left-grid col-sm-6">
-									<div class="choose-info-grid ">
-										<ul>
-											<li><i class="fa fa-comments" aria-hidden="true"></i></li>
-											<li>Lorem ipsum</li>
-										</ul>
-									</div>
-								</div>
-								<div class="choose-right-grid col-sm-6">
-									<div class="choose-info-grid ">
-										<ul>
-											<li><i class="fa fa-user" aria-hidden="true"></i></li>
-											<li>Nulla dictum</li>
-										</ul>
-									</div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="choose-info-top">
-								<div class="choose-left-grid col-sm-6">
-									<div class="choose-info-grid ">
-										<ul>
-											<li><i class="fa fa-money" aria-hidden="true"></i></li>
-											<li>Lorem ipsum</li>
-										</ul>
-									</div>
-								</div>
-								<div class="choose-right-grid col-sm-6">
-									<div class="choose-info-grid ">
-										<ul>
-											<li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></li>
-											<li>Nulla dictum</li>
-										</ul>
-									</div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 choose-grid">
-						<div class="w3-banner-bottom-heading choose-heading">
-							<h3>What People<span> say's?</span></h3>
-						</div>
-						<div class="top-choose-info testimonial-info">
-							<div class="wthree-testimonial-grid">
-									<div class="slider">
-											<div class="callbacks_container">
-												<ul class="rslides" id="slider3">
-													<li>
-														<div class="testimonial-top">
-															<i class="fa fa-quote-right" aria-hidden="true"></i>
-															<p>Donec feugiat tellus sem, laoreet iaculis orci lobortis vel. Sed sed luctus orci, at lacinia risus. Ut porttitor ante ac tincidunt elementum. Curabitur ex dolor, condimentum vitae nunc vel, pulvinar semper justo. Vestibulum et aliquet magna, maximus dapibus enim.</p>
-															<h5>John Smith <span>- Customer</span></h5>
-														</div>
-													</li>
-													<li>
-														<div class="testimonial-top">
-															<i class="fa fa-quote-right" aria-hidden="true"></i>
-															<p>Pellentesque urna ex, ultricies a nunc at, pretium maximus nisi. Vestibulum non auctor diam. Mauris eget consectetur mauris. Aenean leo elit, accumsan vel elit vitae, mattis ultricies lacus. Cras consectetur justo lorem, sed dictum sapien eleifend at.Donec sed </p>
-															<h5>Divide Rule <span>- Customer</span></h5>
-														</div>
-													</li>
-												</ul>
-											</div>
-											<script>
-												// You can also use "$(window).load(function() {"
-												$(function () {
-												  // Slideshow 4
-												  $("#slider3").responsiveSlides({
-													auto: true,
-													pager:true,
-													nav:false,
-													speed: 500,
-													namespace: "callbacks",
-													before: function () {
-													  $('.events').append("<li>before event fired.</li>");
-													},
-													after: function () {
-													  $('.events').append("<li>after event fired.</li>");
-													}
-												  });
-											
-												});
-											 </script>
-											<!--banner Slider starts Here-->
-									</div>
-							</div>
-
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //choose -->
-	<!-- subscribe -->
-	<div class="subscribe">
-		<div class="container">
-			<div class="w3-banner-bottom-heading">
-				<h3>Subscribe<span> with Us</span></h3>
-			</div>
-			<div class="w3-agile-subscribe-form">
-				<form action="#" method="post">
-					<input type="text" placeholder="Email" name="Email" required="">
-					<button class="btn1">Subscribe</button>
-				</form>
-			</div>
-		</div>
-	</div>
-	<!-- //subscribe -->
 	<!-- footer -->
 	<div class="footer">
 		<div class="container">
 			<div class="agile-footer-grids">
 				<div class="col-md-4 agile-footer-grid">
-					<h4>History of <span>Hosting</span></h4>
-					<p>Pellentesque urna ex, ultricies a nunc at, pretium maximus nisi. Vestibulum non auctor diam. Mauris eget consectetur mauris. <span>Aenean leo elit, accumsan vel elit vitae, mattis ultricies lacus. Cras consectetur justo lorem, sed dictum sapien eleifend at.</span></p>
+					<h4>Presentado  <span>Por:</span></h4>
+                                        <p> <span>Jean Carlo Arévalo 625492</span><span>Camila Castillo Ulloa 625454</span></p>
 				</div>
-				<div class="col-md-4 agile-footer-grid">
-					<h4>Twitter <span>Posts</span></h4>
-					<ul class="w3agile_footer_grid_list">
-						<li>Ut aut reiciendis voluptatibus maiores <a href="#">http://example.com</a> alias, ut aut reiciendis.
-							<span><i class="fa fa-twitter" aria-hidden="true"></i> 02 days ago</span></li>
-						<li>Itaque earum rerum hic tenetur a sapiente delectus <a href="#">http://example.com</a> ut aut
-							voluptatibus.<span><i class="fa fa-twitter" aria-hidden="true"></i> 03 days ago</span></li>
-					</ul>
-				</div>
-				<div class="col-md-4 agile-footer-grid">
-					<h4>Popular <span>Posts</span></h4>
-					<div class="popular-grids">
-						<div class="popular-grid">
-							<a href="#"><img src="images/6.jpg" alt=""></a>
-						</div>
-						<div class="popular-grid">
-							<a href="#"><img src="images/7.jpg" alt=""></a>
-						</div>
-						<div class="popular-grid">
-							<a href="#"><img src="images/8.jpg" alt=""></a>
-						</div>
-						<div class="popular-grid">
-							<a href="#"><img src="images/9.jpg" alt=""></a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="popular-grids agileits-w3layouts-popular">
-						<div class="popular-grid">
-							<a href="#"><img src="images/10.jpg" alt=""></a>
-						</div>
-						<div class="popular-grid">
-							<a href="#"><img src="images/4.jpg" alt=""></a>
-						</div>
-						<div class="popular-grid">
-							<a href="#"><img src="images/6.jpg" alt=""></a>
-						</div>
-						<div class="popular-grid">
-							<a href="#"><img src="images/7.jpg" alt=""></a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="popular-grids">
-						<div class="popular-grid">
-							<a href="#"><img src="images/8.jpg" alt=""></a>
-						</div>
-						<div class="popular-grid">
-							<a href="#"><img src="images/9.jpg" alt=""></a>
-						</div>
-						<div class="popular-grid">
-							<a href="#"><img src="images/10.jpg" alt=""></a>
-						</div>
-						<div class="popular-grid">
-							<a href="#"><img src="images/4.jpg" alt=""></a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
+								
+				
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 		<div class="copyright">
-			<p>Â© 2016 Hosting City. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+			<p>Arquitectura de Software</p>
 		</div>
 	</div>
 	<!-- //footer -->
