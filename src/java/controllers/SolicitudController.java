@@ -44,14 +44,15 @@ public class SolicitudController {
         Logger.getLogger(ClienteController.class.getName()).log(Level.INFO, "Ejecutando processSubmit1...");
 
         int id = pDao.obtenerId(MySqlDataSource.getConexionBD());
-        String ident = req.getParameter("identificacion");
         String nombre1 = req.getParameter("nombre1");
         String nombre2 = req.getParameter("nombre2");
         String apellido1 = req.getParameter("apellido1");
         String apellido2 = req.getParameter("apellido2");
+        String ident = req.getParameter("identificacion");
         String direccion = req.getParameter("direccion");
-        String telef = req.getParameter("telefono");
         String email = req.getParameter("email");
+        String telef = req.getParameter("telefono");
+       
         
         Solicitud_DTO p = new Solicitud_DTO();
         p.setIdSolicitud(id);
@@ -59,10 +60,11 @@ public class SolicitudController {
         p.setNombre2(nombre2);
         p.setApellido1(apellido1);
         p.setApellido2(apellido2);
-        p.setDireccion(direccion);
         p.setIdentificacion(ident);
+        p.setDireccion(direccion);
+        p.setEmail(email);   
         p.setTelef(telef);
-        p.setEmail(email);                                    
+                                         
             
         boolean insert = pDao.crearSolicitud(p, MySqlDataSource.getConexionBD());
 

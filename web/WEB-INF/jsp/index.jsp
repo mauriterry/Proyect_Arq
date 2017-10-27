@@ -89,10 +89,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1"style="color: #076F78;">
 						<nav>
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="about.html" class="hvr-sweep-to-bottom">Productos</a></li>
-								<li><a href="plans.html" class="hvr-sweep-to-bottom">Tarjetas</a></li>
-                                                               <li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solicitudes<span class="caret"></span></a>
+								<li class="active"><a href="helloworld.htm">Home</a></li>
+								<li><a href="#" class="hvr-sweep-to-bottom">Productos</a></li>
+								<li><a href="#" class="hvr-sweep-to-bottom">Tarjetas</a></li>
+                                                               <li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solicitud tarjeta de credito<span class="caret"></span></a>
 									<ul class="dropdown-menu">
 										<li><a class="hvr-sweep-to-bottom" href="SolicitudCrear.htm">Crear Solicitud</a></li>
 										<li><a class="hvr-sweep-to-bottom" href="SolicitudConsultar.htm">Consultar Solicitud</a></li>
@@ -105,8 +105,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a class="hvr-sweep-to-bottom" href="personaConsultar.htm">Consultar Cliente</a></li>
 										<li><a class="hvr-sweep-to-bottom" href="personaEditar.htm">Editar Cliente</a></li>
 									</ul>
-								</li>
-								<li><a href="blog.html" class="hvr-sweep-to-bottom">Acerca de</a></li>
+								</li> 
+                                                                
+								
 								
 							</ul>
 						</nav>

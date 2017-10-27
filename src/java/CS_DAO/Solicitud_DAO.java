@@ -27,10 +27,10 @@ public class Solicitud_DAO {
         boolean respuesta = false;
         try {            
             
-            Logger.getLogger(Solicitud_DAO.class.getName()).log(Level.INFO, "Ejecutando crearPersona...");
+            Logger.getLogger(Solicitud_DAO.class.getName()).log(Level.INFO, "Ejecutando crearSolicitud...");
             
-            pstmt = con.prepareStatement("INSERT INTO persona "
-                    + " VALUES (?,?,?,?,?,?,?,?,?,?,?)");
+            pstmt = con.prepareStatement("INSERT INTO solicitudt "
+                    + " VALUES (?,?,?,?,?,?,?,?,?)");
             
             pstmt.setInt(1,p.getIdSolicitud());
             pstmt.setString(2, p.getNombre1());
@@ -106,7 +106,7 @@ public class Solicitud_DAO {
         int id = -1;
         try {
             Statement s = con.createStatement();
-            ResultSet rs = s.executeQuery ("select max(id_persona)+1 from persona");
+            ResultSet rs = s.executeQuery ("select max(idSolicitud)+1 from solicitudt");
             
             while (rs.next())
             { 
@@ -127,7 +127,7 @@ public class Solicitud_DAO {
         boolean respuesta = false;
         try {            
             
-            Logger.getLogger(Solicitud_DAO.class.getName()).log(Level.INFO, "Ejecutando editarPersona...");
+            Logger.getLogger(Solicitud_DAO.class.getName()).log(Level.INFO, "Ejecutando editarSolicitud...");
             
             pstmt = con.prepareStatement("UPDATE solicitudt "
                     + " SET "

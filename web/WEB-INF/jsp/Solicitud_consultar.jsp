@@ -1,6 +1,4 @@
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<!DOCTYPE html>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -10,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Centauros Bank | Registration :: w3layouts</title>
+<title>Centauros Bank | Home :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Hosting City Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -40,6 +38,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	});
 </script>
+<link href='css/immersive-slider.css' rel='stylesheet' type='text/css'>
+<!-- pricing -->
+<link rel="stylesheet" href="css/jquery.flipster.css">
+<!-- //pricing -->
 </head>
 <body>
 	<!-- header-top -->
@@ -50,17 +52,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><i class="fa fa-mobile" aria-hidden="true"></i> +11 222 333 4444</li>
 					<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com"> CentaurosBank@CBank.com</a></li>
 				</ul>
-			</div>
-			<div class="agileinfo-social-grids">
-				<ul>
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!-- //header-top -->
+                        </div>
+                        <div class="agileinfo-social-grids">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"> </div>
+                </div>
+        </div>
+        <!-- //header-top -->
 	<!-- header -->
 	<div class="header">
 			<div class="container">
@@ -74,22 +76,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 					  </button>
 						<div class="w3layouts-logo">
-							 <img src="./images/logo.png"border="0" width="80%" height="80%"></img>
-                                                           						</div>
+                                                           <img src="./images/logo.png"border="0" width="80%" height="80%"></img>
+                                                           <table>
+                                                               <tr width="10%">
+                                                               <td> </td>
+                                                               </tr>
+                                                           </table>
+						</div>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1"style="color: #076F78;">
 						<nav>
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="about.html" class="hvr-sweep-to-bottom">Productos</a></li>
-								<li><a href="plans.html" class="hvr-sweep-to-bottom">Tarjetas</a></li>
-                                                               <li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solicitudes<span class="caret"></span></a>
+								<li class="active"><a href="helloworld.htm">Home</a></li>
+								<li><a href="#" class="hvr-sweep-to-bottom">Productos</a></li>
+								<li><a href="#" class="hvr-sweep-to-bottom">Tarjetas</a></li>
+                                                               <li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solicitud tarjeta de credito<span class="caret"></span></a>
 									<ul class="dropdown-menu">
-										<li><a class="hvr-sweep-to-bottom" href="Solicitud_Crear.htm">Crear Solicitud</a></li>
-										<li><a class="hvr-sweep-to-bottom" href="Solicitud_Consultar.htm">Consultar Solicitud</a></li>
-										<li><a class="hvr-sweep-to-bottom" href="Solicitud_Editar.htm">Editar Solicitud</a></li>
+										<li><a class="hvr-sweep-to-bottom" href="SolicitudCrear.htm">Crear Solicitud</a></li>
+										<li><a class="hvr-sweep-to-bottom" href="SolicitudConsultar.htm">Consultar Solicitud</a></li>
+										<li><a class="hvr-sweep-to-bottom" href="SolicitudEditar.htm">Editar Solicitud</a></li>
 									</ul>
 								</li>
 								<li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clientes<span class="caret"></span></a>
@@ -98,8 +105,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a class="hvr-sweep-to-bottom" href="personaConsultar.htm">Consultar Cliente</a></li>
 										<li><a class="hvr-sweep-to-bottom" href="personaEditar.htm">Editar Cliente</a></li>
 									</ul>
-								</li>
-								<li><a href="blog.html" class="hvr-sweep-to-bottom">Acerca de</a></li>
+								</li> 
+                                                                
+								
 								
 							</ul>
 						</nav>
@@ -121,7 +129,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				
 				<div class="login-form">
 					<form action="solicitudConsultarForm.htm" method="post">
-                                            <input type="text" name="identificacion" placeholder="Identificaci�n" required>
+                                            <input type="text" name="identificacion" placeholder="Identificación" required>
                                             <input type="text" name="nombre1" placeholder="Nombre 1" required>
 
                                             <input type="submit" value="CONSULTAR">
@@ -139,7 +147,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                        <th>Apellido 1</th>
                                        <th>Apellido 2</th>
                                        <th>Identificacion</th>
-                                       <th>Direcci�n</th>
+                                       <th>Dirección</th>
                                        <th>E-mail</th>
                                        <th>Telefono</th>
                                  </tr>
@@ -170,7 +178,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="agile-footer-grids">
 				<div class="col-md-4 agile-footer-grid">
 					<h4>Presentado  <span>Por:</span></h4>
-                                        <p> <span>Jean Carlo Ar�valo 625492</span><span>Camila Castillo Ulloa 625454</span></p>
+                                        <p> <span>Jean Carlo Arévalo 625492</span><span>Camila Castillo Ulloa 625454</span></p>
 				</div>
 								
 				
@@ -182,7 +190,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 		<div class="copyright">
-			<p>© 2016 Hosting City. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+			<p>Â© 2016 Hosting City. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
 		</div>
 	</div>
 	<!-- //footer -->
