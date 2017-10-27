@@ -10,7 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Hosting City a Hosting Category Flat Bootstrap responsive Website Template | Registration :: w3layouts</title>
+<title>Centauros Bank | Registration :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Hosting City Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -48,15 +48,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="w3layouts-address">
 				<ul>
 					<li><i class="fa fa-mobile" aria-hidden="true"></i> +11 222 333 4444</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com"> mail@example.com</a></li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com"> CentaurosBank@CBank.com</a></li>
 				</ul>
 			</div>
 			<div class="agileinfo-social-grids">
 				<ul>
 					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-rss"></i></a></li>
-					<li><a href="#"><i class="fa fa-vk"></i></a></li>
+				
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -76,26 +75,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 					  </button>
 						<div class="w3layouts-logo">
-							<h1><a href="index.html">Hosting <span>City</span></a></h1>
+							 <img src="./images/logo.png"border="0" width="80%" height="80%"></img>
+                                                           
 						</div>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1"style="color: #076F78;">
 						<nav>
 							<ul class="nav navbar-nav">
-								<li><a href="helloworld.htm" class="hvr-sweep-to-bottom">Home</a></li>
-								<li><a href="about.html" class="hvr-sweep-to-bottom">About</a></li>
-								<li><a href="plans.html" class="hvr-sweep-to-bottom">Plans</a></li>
-								<li class="active"><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Persona<span class="caret"></span></a>
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="about.html" class="hvr-sweep-to-bottom">Productos</a></li>
+								<li><a href="plans.html" class="hvr-sweep-to-bottom">Tarjetas</a></li>
+                                                               <li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solicitudes<span class="caret"></span></a>
 									<ul class="dropdown-menu">
-										<li><a class="hvr-sweep-to-bottom" href="personaCrear.htm">Crear</a></li>
-										<li><a class="hvr-sweep-to-bottom" href="personaConsultar.htm">Consultar</a></li>
-										<li><a class="hvr-sweep-to-bottom" href="personaEditar.htm">Editar</a></li>
+										<li><a class="hvr-sweep-to-bottom" href="Solicitud_Crear.htm">Crear Solicitud</a></li>
+										<li><a class="hvr-sweep-to-bottom" href="Solicitud_Consultar.htm">Consultar Solicitud</a></li>
+										<li><a class="hvr-sweep-to-bottom" href="Solicitud_Editar.htm">Editar Solicitud</a></li>
 									</ul>
 								</li>
-								<li><a href="blog.html" class="hvr-sweep-to-bottom">Blog</a></li>
-								<li><a href="mail.html" class="hvr-sweep-to-bottom">Mail Us</a></li>
+								<li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clientes<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a class="hvr-sweep-to-bottom" href="personaCrear.htm">Crear Cliente</a></li>
+										<li><a class="hvr-sweep-to-bottom" href="personaConsultar.htm">Consultar Cliente</a></li>
+										<li><a class="hvr-sweep-to-bottom" href="personaEditar.htm">Editar Cliente</a></li>
+									</ul>
+								</li>
+								<li><a href="blog.html" class="hvr-sweep-to-bottom">Acerca de</a></li>
+								
 							</ul>
 						</nav>
 					</div>

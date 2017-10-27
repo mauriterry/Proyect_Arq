@@ -105,7 +105,7 @@ public class SolicitudController {
 
         Logger.getLogger(SolicitudController.class.getName()).log(Level.SEVERE, null, "Consultar + " + ident + "-" + datos.size());
         
-        model.put("listaPersonas", datos);
+        model.put("listaSolicitud", datos);
         if (datos.size() > 0)
             model.put("mensaje", "La consulta se realizo satisfactoriamente!!!" + datos.size());
         else
@@ -142,7 +142,7 @@ public class SolicitudController {
 
         Logger.getLogger(SolicitudController.class.getName()).log(Level.SEVERE, null, "Consultar + " + ident + "-" + datos.size());
         
-        model.put("listaSolicitudes", datos);
+        model.put("listaSolicitud", datos);
         
         
         return "Solicitud_editar";

@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Hosting City a Hosting Category Flat Bootstrap responsive Website Template | Home :: w3layouts</title>
+<title>Centauros Bank | Home :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Hosting City Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -92,7 +92,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li class="active"><a href="index.html">Home</a></li>
 								<li><a href="about.html" class="hvr-sweep-to-bottom">Productos</a></li>
 								<li><a href="plans.html" class="hvr-sweep-to-bottom">Tarjetas</a></li>
-                                                                <li><a href="plans.html" class="hvr-sweep-to-bottom">Solicitudes</a></li>
+                                                               <li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solicitudes<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a class="hvr-sweep-to-bottom" href="SolicitudCrear.htm">Crear Solicitud</a></li>
+										<li><a class="hvr-sweep-to-bottom" href="SolicitudConsultar.htm">Consultar Solicitud</a></li>
+										<li><a class="hvr-sweep-to-bottom" href="SolicitudEditar.htm">Editar Solicitud</a></li>
+									</ul>
+								</li>
 								<li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clientes<span class="caret"></span></a>
 									<ul class="dropdown-menu">
 										<li><a class="hvr-sweep-to-bottom" href="personaCrear.htm">Crear Cliente</a></li>
