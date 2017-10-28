@@ -20,7 +20,7 @@ import org.springframework.web.bind.support.SessionStatus;
 
 /**
  *
- * @author camila
+ * @author Maru
  */
 @Controller
 @RequestMapping("/")
@@ -173,7 +173,7 @@ public class ClienteController {
         String telef = req.getParameter("telefono");
         String email = req.getParameter("email");
         
-        Logger.getLogger(ClienteDAO.class.getName()).log(Level.INFO, "Id persona: " + id);
+        Logger.getLogger(ClienteDAO.class.getName()).log(Level.INFO, "Id persona: {0}", id);
         
        ClienteDTO p = new ClienteDTO();
         p.setId(id);
